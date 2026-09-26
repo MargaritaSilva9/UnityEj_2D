@@ -6,13 +6,13 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    #region sonidos
-    [SerializeField]
-    private AudioClip stop;
-    [SerializeField]
-    private AudioSource respuestaAudio;
-    //Reloj objReloj;
-    #endregion
+    //#region sonidos
+    //[SerializeField]
+    //private AudioClip stop;
+    //[SerializeField]
+    //private AudioSource respuestaAudio;
+    ////Reloj objReloj;
+    //#endregion
 
     public TextMeshProUGUI timerMinutes;
     public TextMeshProUGUI timerSeconds;
@@ -48,11 +48,11 @@ public class Timer : MonoBehaviour
             stopTime = timerTime;
             Debug.Log(stopTime.ToString());
             ///
-            if (stopTime >= 30)
-            {
-                respuestaAudio.clip = stop;
-                respuestaAudio.Play();
-            }
+            //if (stopTime >= 30)
+            //{
+            //    respuestaAudio.clip = stop;
+            //    respuestaAudio.Play();
+            //}
 
         }
     }
